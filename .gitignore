@@ -1,5 +1,5 @@
 ./env
-
+/data
 env/
 #ignore screts.yaml
 config/secrets.yaml

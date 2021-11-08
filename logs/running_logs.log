@@ -1,0 +1,13 @@
+[2021-11-08 15:41:00,904: INFO: stage_01_load_save]: >>>>> stage one started
+[2021-11-08 15:41:01,885: ERROR: stage_01_load_save]: [WinError 3] The system cannot find the path specified: '../outside_data/dog'
+Traceback (most recent call last):
+  File "src/stage_01_load_save.py", line 43, in <module>
+    get_data(config_path=parsed_args.config)
+  File "src/stage_01_load_save.py", line 31, in get_data
+    copy_file(source_download_dir, local_data_dir)
+  File "src/stage_01_load_save.py", line 16, in copy_file
+    list_of_files = os.listdir(source_download_dir)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: '../outside_data/dog'
+[2021-11-08 15:43:45,204: INFO: stage_01_load_save]: >>>>> stage one started
+[2021-11-08 15:43:59,443: INFO: stage_01_load_save]: stage one completed! all the data are saved in local >>>>>
+
